@@ -50,6 +50,12 @@ jobs:
             --self-contained-html \
             --junitxml=reports/junit.xml
 
+      - name: Publish test summary
+        if: always()
+        run: python scripts/test_summary.py reports/junit.xml >> $GITHUB_STEP_SUMMARY
+
+
+
       - name: Upload report
         if: always()
         uses: actions/upload-artifact@v4
