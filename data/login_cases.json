@@ -1,7 +1,7 @@
 [
   {
-    "email": "hongyi666@163.com",
-    "password": "!HONGyi666",
+    "email": "demo",
+    "password": "demo",
     "expected_status": 200
   }
 ]

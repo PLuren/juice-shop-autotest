@@ -52,7 +52,7 @@ jobs:
 
       - name: Publish test summary
         if: always()
-        run: python scripts/summary.py reports/junit.xml >> $GITHUB_STEP_SUMMARY
+        run: python scripts/generate_summary.py reports/junit.xml >> $GITHUB_STEP_SUMMARY
 
 
       - name: Upload report
